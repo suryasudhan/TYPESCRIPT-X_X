@@ -1,0 +1,17 @@
+
+
+        TYPE ALIASES :
+
+  * A TYPE ALIASES is a way to create a new name for an existing type . it allows you to define a [custom type] that refers to another type and give it a more meaningful or descriptive name..
+
+  * TYPE ALIASES are defined using the [type keyword] , followed by the name of the ALIASES , an equal sign (=) , and type if refers to....
+
+
+  ✨ Basic Syntax :
+
+      type AliasName = someType;
+
+
+       * type is reserved keyword
+       * AliasName is userDefined keyword
+       * someType is refers to TYPEs

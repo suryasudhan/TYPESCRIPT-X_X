@@ -1,0 +1,17 @@
+
+
+               UNIONS :
+
+    * UNIONS are used to declare a type that can have one of several possible types . UNIONS are useful when we want to allow a variable or parameter to accept [multiple types]
+
+    @=> The SYNTAX for defining a UNION type in TypeScript uses the pipe symbol (|)
+
+
+      # For example , if we want to define a variable that can be either a number or a string , we would write:
+
+            (let myVar : number | String;]  
+
+      # We can also use unions with function parameters . For example, if we have a function that accepts either a string or an array of strings, we could define its parameter like this :
+          (function foo(param:string | string[]){
+            //function body
+          }]          

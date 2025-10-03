@@ -1,0 +1,43 @@
+
+
+            ENUMS :
+
+        * ENUMS is a way to define a set of [named constants]. ENUMS allow you to define a collection of related values that can be used interchangeably in your code 
+
+ (
+  ⚡ TL;DR
+*node script.ts ❌ → Node can’t read enums/types/interfaces.
+
+*tsc script.ts && node script.js ✅ → compile then run.
+
+*ts-node script.ts ✅ → run TS directly.
+]
+
+  =>>> for example , let's say you're building a weather app and you want to define a set of possible weather conditions like "sunny","cloudy","rainy"and"snowy". You could define an enum like this...
+
+        ( => no meed to mention [ : ; ]-> symbols ->stright to use 
+
+          enum WeatherConditions {
+            Sunny,
+            Cloudy,
+            Rainy,
+            Snowy
+          }
+          ]
+
+      * in this example, WeatherConditions is the name of the enum, and each of the values(e.g. Sunny,cloudy,etc...) is assigned an automatic numberical value starting from 0...
+
+  =>>> You can also assing specific values to each ENUM member like this :
+
+     ( enum WeatherConditions {
+        Sunny = "sunny",
+        Cloudy = "cloudy",
+        Rainy = "rainy",
+        Snowy = "snowy",
+      }
+      ]
+
+  =>>> USAGE :
+
+  const currentWeather = WeatherConditions.Sunny;
+  console.log(` The current weather is ${currentWeather}`)  // OUTPUT : The current weather is sunny

@@ -1,0 +1,49 @@
+
+
+                      TYPESCRIPT :
+
+        * JavaScript with SUPERpowers : TypeScript is like a more powerful version of JavaScript . it lets you do everything that JavaScript does, but it adds some extra features to make your life easier when writing larger and more complex programs...
+
+
+                  JAVASCRIPT and MORE :
+
+        * TypeScript adds additional syntax to JavaScript to support a [tighter integration with your editor] . Catch errors early in your editor
+
+                  A RESULT YOU CAN TRUST :
+
+        * TypeScript code converts to JavaScript , which [run anywhere JavaScript runs] : in a browser,on Node.js, Deno , Bun and in your apps...
+
+                    SAFETY AT SCALE :
+
+        * TypeScript understands JavaScript and uses [type inference to give you great tooling] without additional code ...     
+
+
+>..........................................................       
+
+                  ✅ What is TypeScript?    
+
+        @=> it's superset of JavaScript that compiles down to plain js
+
+        MAIN PERKS :
+
+                   * Static typing -> Catches errors while coding, not at runtime
+
+                   * Interfaces -> Define structure for objects
+
+                   * Enums,Generics,Type Aliases -> Fancy tools to write cleaner,reusable code
+ 
+
+>..........................................................       
+
+                 🚀 Why TypeScript over JS?
+
+                 * Better editor support (autocompletion,refactoring)
+
+                 * Early bug detection
+
+                 * Easier to maintain large codebases
+
+                 * Works perfectly with frameworks like React,Angular,Node.js...
+
+
+>..........................................................                 

@@ -1,0 +1,5 @@
+ tsc -init -> it created the [tsconfig.json] file
+
+ tsc script.ts -> created the [script.js] javascript file
+
+ in tsconfig.json file change ["target": "es6"] , becasue of we have to change typScript to script file end-to-end order 

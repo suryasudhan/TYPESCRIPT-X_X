@@ -1,0 +1,4 @@
+
+                    VOID IN TYPESCRIPT :
+
+              * Void is a type that represents the [absence] of any value . it is often used as the return type for functions that do not return a value ...

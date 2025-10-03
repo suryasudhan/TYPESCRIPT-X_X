@@ -1,0 +1,10 @@
+
+
+   OBJECT :
+
+    * An OBJECT in TypeScript is a structured data type that represents a collection of properties, each with a key and an associated value . The properties of an OBJECT can have [specific types] , and the OBJECT itself can be annotated with a type , often defined using an interface or a type alias . TypeScript uses structural typing, meaning that the shape of an OBJECT(its structure or properties) is what matters for type compatibility...
+
+
+    SYNTAX :
+
+    type varName(annotations/types)={property:value}

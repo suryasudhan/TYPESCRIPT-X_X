@@ -1,0 +1,18 @@
+
+ TypeScript in Your Project :
+
+            npm install typescript --save-dev = dependinc perpous
+
+
+Globally Installing TypeScript :
+
+        we check if we install ? 
+          * by [type -> tsc -v) on cmd  
+
+ step to intall :
+
+        [npm install -g typescript) => add to cmd* 
+        
+atep to add additional :         
+             
+        [adding additional ( npm i -g ts-node -> on cmd)]

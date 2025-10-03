@@ -1,0 +1,17 @@
+
+              FUNCTION PARAMETERS ANNOTATIONS :
+
+        * Function parameter annotations in TypeScript are used to specify the expected types of the parameters that a Function takes...
+
+
+        {
+
+NOTES >>> 
+
+const double = (x: number, Y: number) => x * Y;
+const res = double(2, 10 ,3); /*Expected 2 arguments, but got 3 - popup an ERROR
+console.log(res);
+
+=> Also notice , TypeScript will gives you warining if you provide more or less arguments then you specify in your parameters area...
+
+         )

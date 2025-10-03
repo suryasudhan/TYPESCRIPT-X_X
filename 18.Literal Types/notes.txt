@@ -1,0 +1,21 @@
+
+
+                      LITERAL TYPES :
+
+        * LITERAL TYPES allow you to specify a value that can only be [one specify LITERAL value] . This means that a variable with a LITERAL type can only have one specific value and no other ...
+
+
+// String Literal Type :
+        let color: "red" | "blue" | "green";
+        color = "red"; // valid
+        color = "black"; // invalid
+
+// Boolean Literal Type :
+        let isTrue: true;
+        isTrue = true; //valid
+        isTrue = false; // invalid
+
+// Number Literal Types
+        let number: 1 | 2 | 3;
+        number = 1; // valid
+        number = 10; // invalid

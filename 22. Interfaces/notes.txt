@@ -1,0 +1,168 @@
+
+
+                     INTERFACE :
+
+@> INTERFACE is a way to define a [contract] for the shape of an object. it specifies the properties and their types that an object must have . INTERFACE are a powerful tool for enforcing a certain structure in your code ...
+
+// INTERFACE  DEFINITION :
+          interface Person {
+               firstName: string;
+               lastName: string;
+               age: number;
+          }
+// USAGE :
+          const examplePerson: Person = {
+               firstName: "JOJO",
+               lastName: "KUJO",
+               age: 29,
+          };
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+@> While interfaces are commonly used to define the structure of the object , they are not limited to just objects . interface in TypeScript can also be used to [describe the shape] of [functions and classes] too!
+
+// INTERFACE FOR FUNCTION :
+          interface MathOperation {
+               (x: number, y: number): number;
+          }
+// USAGE :
+          const add: MathOperation = (a, b) => a + b;
+          const subtract: MathOperation = (a, b) => a - b;
+          console.log(add(5, 5)); // 10
+          console.log(subtract(100, 50)); // 50
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// INTERFACE FOR A CLASS :
+          interface Vehicle {
+          start(): void; // using void due to we'r not returning somthig form that*
+          stop(): void; // using void due to we'r not returning somthig form that*
+          }
+
+// CLASS IMPLEMENTION THE INTERFACE : we using [IMPLEMENTS] not [extends]
+          class Car implements Vehicle {
+          start() {
+          console.log("Car started");
+          }
+          stop() {
+          console.log("Car stopped");
+          }
+          }
+
+// USAGE :
+          const myCar = new Car();
+          myCar.start();
+          myCar.stop();
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// INTERFACE FOR METHODS :
+          interface Person1 {
+               firstName: string;
+               lastName: string;
+               age: number;
+               sayHello(): void; // we don't return anyting so , we using [void]
+          }
+
+          function greet(person: Person1) {
+               console.log(`Hello , ${person.firstName} ${person.lastName}`);
+               person.sayHello();
+          }
+
+// creating seperate OBJECT
+          const res1: Person1 = {
+               firstName: "JOTARO",
+               lastName: "KUJO",
+               age: 29,
+               sayHello() {
+               console.log("Hi There!!!");
+               },
+          };
+
+          const res2: Person1 = {
+               firstName: "ICHIGO",
+               lastName: "BANKAI",
+               age: 18,
+               sayHello() {
+               console.log("What's GOOD!!!");
+               },
+          };
+
+// console :
+          greet(res1);
+          greet(res2);
+               /* Hello , JOTARO KUJO
+                Hi There!!!
+               Hello , ICHIGO BANKAI
+               What's GOOD!!! */
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//  EXTENDING INTERFACE | BOROWING FUNCTIONALITY PARENT INTERFACE TO CHILDREN INTERFACE :
+          interface MovieDetails {
+               readonly name: string;
+               ratings: number;
+               printMOvieInfo(name: string, price: number, ratings: number): string | number; // [|]-used for either string or number
+          }
+// creating new [MovieGenra] and borowing all the functionality from [MovieDetails]
+          interface MovieGenra extends MovieDetails {
+               genra: string;
+          }
+// USAGE :
+          const movie1: MovieGenra = {
+               name: "JJBA",
+               ratings: 10,
+               genra: "Advanture",
+               printMOvieInfo(
+               name: string,
+               price: number,
+               ratings: number
+               ): string | number {
+               return `Movie name:${name} Price:${price} Ratings:${ratings}`;
+               },
+          };
+
+const result = movie1.printMOvieInfo("STARDUST CRUSADER", 100, 10);
+console.log(result); // Movie name:STARDUST CRUSADER Price:100 Ratings:10
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    DECLARATION MERGING :
+
+            * Once an interface is declared, it cannot be directly modified. However , TypeScript allows what is informally referred to as "DECLARATION MERGING" or "INTERFACE EXTENsion", which is often misconstrued as "re-opening"...
+
+            * DECLARATION MERGING in TypeScript refers to the ability to extend or augment an existing DECLARATION , including interface. This can be useful when you want to add new properties or METHODS to an existing interface without modified the original DECLARATION...
+             
+
+             
+// ORIGINAL INERFACE :
+          interface Cars {
+               brand: string;
+               start(): void;
+          }
+
+//  DECLARATION MERGING (interface extension):
+          interface Cars {
+               model: string;
+               stop(): void;
+          }
+
+// USAGE OF THE EXTENDED INTERFACE :
+          const myCars: Cars = {
+                    brand: "B M W",
+                    model: "M4",
+               start() {
+                    console.log("CAR-STARTED");
+               },
+               stop() {
+                    console.log("CAR-STOPED");
+               },
+          };
+
+console.log(myCars.brand); // B M W
+console.log(myCars.model); // M4
+myCars.start(); // CAR-STARTED
+myCars.stop(); // CAR-STOPED
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+

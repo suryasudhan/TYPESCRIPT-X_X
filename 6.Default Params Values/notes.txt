@@ -1,0 +1,4 @@
+
+                   DEFAULT PARAMS VALUE :
+
+          assining DEFAULT VALUE to PARAMETER [it act as ES6 on JAVASCRIPT too >>>]

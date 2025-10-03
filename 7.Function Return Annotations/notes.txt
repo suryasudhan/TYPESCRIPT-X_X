@@ -1,0 +1,12 @@
+
+       FUNCTION RETURN ANNOTATIONS :
+
+       * in TypeScript , a return ANNOTATIONS just means explicitly telling TypeScript what type a FUNCTION will return
+
+
+       ✨ Syntax:
+
+       function functionName(params): retunType{
+        // logic
+        return value;
+       }

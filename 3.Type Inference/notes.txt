@@ -1,0 +1,5 @@
+
+
+                    TYPE INFERENCE :
+
+          * Type INFERENCE is a feature in TypeScript that allows the compiler to [automatically] determine the type of a varibale based on value. in other words , if you declare a varibale without exlicitly specifying its type, TypeScript will try to infer the type based on the value you assign to it...

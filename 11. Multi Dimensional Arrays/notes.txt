@@ -1,0 +1,7 @@
+
+ 
+    MULTI DIMENSIONAL :
+
+        @ NESTED ARRAY OR MUILT DEMINITIONAL ARRAY :
+
+    * A multi-dimensional array is an array that contains other arrays as its elements. MULTI-DIMENSIONAL arrays can be defined using the same notation as one-dimensional arrays , but with [nested square] brackets...

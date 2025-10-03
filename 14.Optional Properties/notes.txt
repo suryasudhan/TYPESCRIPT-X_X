@@ -1,0 +1,35 @@
+
+
+                    OPTIONAL PROPERTIES  
+
+OPTIONAL PROPERTIES :>>>
+            * you can make a certain property OPTIONAL in an object type by adding a question mark (?) after the property name ! 
+
+            * For example , let's say you have an object type for a person with name,age and email properties , but you want to make the email property OPTIONAL . You can do this by adding a question mark aftr the email property:
+
+
+            {
+
+                  type Person = {
+                    name: string;
+                    age: number;
+                    email?: string;
+                  };
+
+              )
+
+
+            * Now , when you create an object of type Person , you can choose whether or not to include the email property
+
+           (
+            
+            const alice: Person = { name: "JOJO", age: 29 };
+            const bob: Person = {
+              name: "jojo",
+              age: 29,
+              email: "JOJO@gamil.com",
+            };
+            
+            ]   
+
+            @=> in this example , the alice object does not include the email property , while the bob object does . Because the email property is marked as OPTIONAL in the Person type definition , it is vaild to create object with or without it...

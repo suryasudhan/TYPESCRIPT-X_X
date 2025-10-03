@@ -1,0 +1,15 @@
+
+
+
+           ARRAYS TYPES :
+
+      * ARRAYS are a types of object that can store multiple values of the [same data] type , ARRAYS in TypeScript are types, which means you can specify the type of values that an ARRAYS can hold ...
+
+      //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+      @ THERE ARE 2 TYPES OF ARRAYS :
+
+      * Using the square bracket notation [] to undicate an array of a specific type
+
+      * Using the generic ARRAY <type> notation to indicate an array of a specific type
